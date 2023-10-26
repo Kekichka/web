@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    text-align: center;
+    background: linear-gradient(180deg, #2e3b57 50%, #c1cbdf 50%);
+   
+   
+}
+
+.title{
+    padding-top: 50px;
+    margin: 0;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+.phone{
+    height: 20px;
+    
+}
+
+span{
+    font-weight: bold;
+    color:red
+}
+
+.textbig{
+    display: block;
+    padding: 5px;
+    width: 300px;
+    text-align: center;
+    margin: -150px 0;
+    font-size: 30px;
+    color: whitesmoke;
+    position: absolute;
+    font-family: monospace;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.text{
+    padding: 5px;
+    width: 300px;
+    display:inline-block;
+    margin: 65px -230px;
+    font-size: 20px;
+    color: whitesmoke;
+    font-family: monospace;  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    position: absolute;
+   
+}
+
+
+.content{
+    display: flex;
+    height: 560px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.pic{
+    display: inline-block;
+    height: 150px;
+    width: 145px;   
+    padding: 5px;
+   
+}
+
+.picture{
+    display: block;
+    height: 250px;
+    padding: 5px;
+    width: 305px;
+   
+}
+ 
+
+.footer {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}

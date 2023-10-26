@@ -1,0 +1,130 @@
+body {
+    background-image: url("./mainpic.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 10vw;
+    font-family: garamond;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    letter-spacing: 5px;
+}
+
+.undertitle {
+    text-align: center;
+    letter-spacing: 7px;
+}
+
+.undertitle img {
+    height: 13px;
+    width: auto;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 35px;
+    box-sizing: border-box;
+}
+
+.navbar_text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: monospace;
+    font-size: large;
+    letter-spacing: 5px;
+}
+
+.navbar_text p {
+    margin: 0px 20px;
+}
+
+.navbar_image img {
+    height: 50px;
+    width: auto;
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid white;
+    width: 200px;
+    height: 50px;
+    color: white;
+    letter-spacing: 2px;
+    font-family: monospace;
+}
+
+.down_content{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 120px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    margin-top: 10%;
+}
+
+.down_content_text{
+    font-size: 20px;
+    width: 25%;
+    font-family: garamond;
+}
+
+.down_image{
+    display: flex;
+    align-items: flex-end;
+}
+
+.down_content img{
+    height: 100px;
+    width: auto;
+}
+
+svg {
+    fill: currentColor;
+    width: 8%;
+    height: 8%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 46%;
+    letter-spacing: 0.7px;
+  }
+
+@media (max-width: 1200px) {
+    .navbar_image{
+        display: none;
+    }
+    .buttonDiv{
+        display: none;
+    }
+    .navbar{
+        justify-content: flex-end;
+    }
+    .title{
+        display: none;
+    }
+    .undertitle{
+        letter-spacing: 3px;
+        margin-top: 40px;
+    }
+    .down_content{
+        flex-direction: column;
+    }
+    .down_content_text{
+        width: 100%;
+        text-align: center;
+    }
+    .down_image{
+        align-items: center;
+        justify-content: center;
+        margin-top: 26%;
+    }
+}
