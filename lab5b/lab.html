@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Online Calculator</title>
+</head>
+<body>
+    <div id="calculator-container">
+        <div class="calculator-buttons">
+            <button onclick="showCalculator('triangle1')">Triangle Area by Sides</button>
+            <button onclick="showCalculator('triangle2')">Triangle Area by Sides and Angle</button>
+            <button onclick="showCalculator('triangle3')">Triangle Area by Side and Height</button>
+            <button onclick="showCalculator('triangle4')">Triangle Area by Sides and Circumradius</button>
+            <button onclick="showCalculator('palindrome')">Palindrome Checker</button>
+            <button onclick="showCalculator('anagram')">Anagram Checker</button>
+            <button onclick="showCalculator('fibonacci1')">Fibonacci Number Finder</button>
+            <button onclick="showCalculator('fibonacci2')">Fibonacci Sequence Checker</button>
+        </div>
+
+        <div id="triangle1" class="calculator">
+            <h2>Triangle Area By Sides Calculator</h2>
+            <label for="side1_triangle1">Side 1:</label>
+            <input type="number" id="side1_triangle1">
+            <label for="side2_triangle1">Side 2:</label>
+            <input type="number" id="side2_triangle1">
+            <label for="side3_triangle1">Side 3:</label>
+            <input type="number" id="side3_triangle1">
+            <button onclick="calculateTriangleArea('triangle1')">Calculate</button>
+            <p id="result_triangle1"></p>
+        </div>
+
+        <div id="triangle2" class="calculator">
+            <h2>Triangle Area By Sides And Angle Calculator</h2>
+            <label for="side1_triangle2">Side 1:</label>
+            <input type="number" id="side1_triangle2">
+            <label for="side2_triangle2">Side 2:</label>
+            <input type="number" id="side2_triangle2">
+            <label for="angle_triangle2">Angle (in degrees):</label>
+            <input type="number" id="angle_triangle2">
+            <button onclick="calculateTriangleAreaBySidesAndAngle('triangle2')">Calculate</button>
+            <p id="result_triangle2"></p>
+        </div>
+
+        <div id="triangle3" class="calculator">
+            <h2>Triangle Area By Side And Height Calculator</h2>
+            <label for="side_triangle3">Side of the Triangle:</label>
+            <input type="number" id="side_triangle3">
+            <label for="height_triangle3">Height of the Triangle:</label>
+            <input type="number" id="height_triangle3">
+            <button onclick="calculateTriangleAreaBySideAndHeight('triangle3')">Calculate</button>
+            <p id="result_triangle3"></p>
+        </div>
+
+        <div id="triangle4" class="calculator">
+            <h2>Triangle Area BY Sides And Circumradius Calculator</h2>
+            <label for="side1_triangle4">Side 1:</label>
+            <input type="number" id="side1_triangle4">
+            <label for="side2_triangle4">Side 2:</label>
+            <input type="number" id="side2_triangle4">
+            <label for="side3_triangle4">Side 3:</label>
+            <input type="number" id="side3_triangle4">
+            <label for="radius_triangle4">Radius of Circumcircle:</label>
+            <input type="number" id="radius_triangle4">
+            <button onclick="calculateTriangleArea('triangle4')">Calculate</button>
+            <p id="result_triangle4"></p>
+        </div>
+
+        <div id="palindrome" class="calculator">
+            <h2>Palindrome Checker</h2>
+            <label for="number_palindrome">Enter a Number:</label>
+            <input type="number" id="number_palindrome">
+            <button onclick="checkPalindrome()">Check Palindrome</button>
+            <p id="result_palindrome"></p>
+        </div>
+
+        <div id="anagram" class="calculator">
+            <h2>Anagram Checker</h2>
+            <label for="word1_anagram">Enter the First Word:</label>
+            <input type="text" id="word1_anagram">
+            <label for="word2_anagram">Enter the Second Word:</label>
+            <input type="text" id="word2_anagram">
+            <button onclick="checkAnagram()">Check Anagram</button>
+            <p id="result_anagram"></p>
+        </div>
+
+        <div id="fibonacci1" class="calculator">
+            <h2>Fibonacci Number Finder</h2>
+            <label for="number_fibonacci1">Enter the Fibonacci Sequence Index:</label>
+            <input type="number" id="number_fibonacci1">
+            <button onclick="findFibonacciNumber()">Find Fibonacci Number</button>
+            <p id="result_fibonacci1"></p>
+        </div>
+
+        <div id="fibonacci2" class="calculator">
+            <h2>Fibonacci Sequence Checker</h2>
+            <label for="number_fibonacci2">Enter a Number:</label>
+            <input type="number" id="number_fibonacci2">
+            <button onclick="checkFibonacci()">Check Fibonacci</button>
+            <p id="result_fibonacci2"></p>
+        </div>
+    
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
